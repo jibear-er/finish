@@ -318,6 +318,8 @@ main {
   max-width: var(--max-content-width);
   margin: var(--spacing-lg) auto;
   padding: 0 var(--spacing-md);
+  background-color: #000000; /* Set background to black */
+  color: #ffffff; /* Set text color to white */
 }
 
 .projects-title {
@@ -334,6 +336,29 @@ main {
   gap: var(--spacing-md);
 }
 
+/* New styling for project buttons */
+.project-button {
+  background-color: #000000; /* black background */
+  color: #ffffff; /* white text */
+  border: 2px solid #ffffff; /* white border for contrast */
+  border-radius: var(--border-radius);
+  padding: 16px 24px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color var(--transition-speed), color var(--transition-speed), box-shadow var(--transition-speed);
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.project-button:hover,
+.project-button:focus {
+  background-color: #ffffff; /* white background on hover */
+  color: #000000; /* black text on hover */
+  box-shadow: 0 0 10px #fff;
+  outline: none;
+}
+
 .project-card {
   background: var(--color-card-bg);
   border-radius: var(--border-radius);
@@ -347,7 +372,7 @@ main {
   max-width: var(--max-content-width);
   margin: var(--spacing-lg) auto; /* Center the section itself */
   padding: var(--spacing-lg) var(--spacing-md);
-  color: var(--color-text-secondary);
+  color: #ffffff; /* Set text color to white */
   text-align: center; /* Center the text and heading */
   display: flex; /* Use flexbox for centering */
   flex-direction: column; /* Stack items vertically */
@@ -363,7 +388,7 @@ main {
   background-color: var(--color-card-bg);
   border-radius: var(--border-radius);
   box-shadow: 0 6px 15px var(--color-shadow);
-  color: var(--color-text-primary);
+  color: #ffffff; /* Set text color to white */
   text-align: center; /* Center the text and link */
   display: flex; /* Use flexbox for centering */
   flex-direction: column; /* Stack items vertically */
@@ -453,3 +478,4 @@ main {
     font-size: 1.2em; /* Smaller font size for mobile */
   }
 }
+
